@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:text="Cálculo ICMS substituição tributária"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:id="@+id/baseCalculoTextField"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:hint="Base de cálculo" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:inputType="textPersonName|number|numberSigned|numberDecimal"
+            android:ems="10"
+            android:id="@+id/aliquotaTextField"
+            android:hint="Alíquota interna da UF" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:inputType="textPersonName|number|numberSigned|numberDecimal"
+            android:ems="10"
+            android:id="@+id/icmsPadraoTextFiedl"
+            android:hint="Valor ICMS padrão" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:inputType="textPersonName|number|numberSigned|numberDecimal"
+            android:ems="10"
+            android:id="@+id/valorProdutoOuServicoTextFiedl"
+            android:hint="Valor do produto/serviço" />
+
+        <Button
+            android:text="Calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_button"
+            android:layout_marginTop="24dp"
+            android:id="@+id/calcularBtn" />
+
+        <TextView
+            android:text="Resultado: 0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:id="@+id/resultadoTextView"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
